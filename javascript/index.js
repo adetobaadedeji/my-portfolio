@@ -8,6 +8,51 @@ hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("toggle");
 });
 
+const btn_primary = document.querySelector(".btn-primary");
+const btn_secondary = document.querySelector(".btn-secondary");
+
+btn_primary.addEventListener("mouseover", () => {
+	btn_primary.classList.remove("btn-primary");
+	btn_primary.classList.add("btn-secondary");
+
+	btn_secondary.classList.add("btn-primary");
+	btn_secondary.classList.remove("btn-secondary");
+
+});
+btn_primary.addEventListener("mouseout", () => {
+	btn_primary.classList.add("btn-primary");
+	btn_primary.classList.remove("btn-secondary");
+
+	btn_secondary.classList.add("btn-secondary");
+	btn_secondary.classList.remove("btn-primary");
+});
+
+btn_secondary.addEventListener("mouseover", () => {
+	btn_secondary.classList.remove("btn-secondary");
+	btn_secondary.classList.add("btn-primary");
+
+	btn_primary.classList.add("btn-secondary");
+	btn_primary.classList.remove("btn-primary");
+
+});
+btn_secondary.addEventListener("mouseout", () => {
+	btn_secondary.classList.add("btn-secondary");
+	btn_secondary.classList.remove("btn-primary");
+
+	btn_primary.classList.add("btn-primary");
+	btn_primary.classList.remove("btn-secondary");
+});
+
+	// const btn_primarys = document.querySelectorAll(".btn-primary");
+
+    // btn_primarys.forEach(btn_primary => {
+	// 		addEventListener("mouseover", () => {
+	// 		btn_primary.classList.remove("btn-primary");
+	// 		btn_primary.classList.add("btn-secondary");
+	// 	});
+	// });
+ 
+
 const gotoRightPage = (currentPage, targetPageClassname) => {
 	currentPage.classList.add("exitToLeft");
 	currentPage.classList.remove("currentPage");

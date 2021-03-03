@@ -789,42 +789,36 @@ a {
 button {
   outline: none;
   border-style: none;
-  font-family: "Poppins", "Arial", sans-serif;
 }
 
 button:visited {
   border-style: none;
 }
 
-.btn,
-.btn:link,
-.btn:focus {
-  border-style: none;
+.btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
   display: inline-block;
   cursor: pointer;
+  border-style: none;
   border-radius: 0.3rem;
   padding: 0.5rem;
   text-transform: uppercase;
+  transition: all 2s ease;
 }
-
 .btn-primary {
-  font-size: 0.8rem;
   color: #fff;
   background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
 }
-
+.btn-secondary {
+  color: #bc1a22;
+  background-color: #fff;
+}
 .btn-wrapper {
   display: inline-block;
-  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
-  border-radius: 0.3rem;
   padding: 0.125em;
   margin: 0px 0.625rem;
-}
-
-.btn-secondary {
-  font-size: 0.8rem;
-  color: rgba(188, 26, 34, 0.5);
-  background-color: #fff;
 }
 @keyframes makeItBigger {
   50% {
