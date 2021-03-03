@@ -1,0 +1,53 @@
+@import "./variables";
+
+// *,
+// *::before,
+// *::after {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    // text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+html{
+    font-size: 100%;
+    @include lg{
+        font-size: 87.5%;
+    }
+    @include md{
+        font-size: 75%;
+    }
+    @include sm{
+        font-size: 55%;
+    }
+    @include xsm{
+        font-size: 48%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    background-color: $body-bgcolor;
+    font-family: $font-two;
+    height: 100vh;
+}
+  
+
+  
+ 
+  
+    
+ 
+  

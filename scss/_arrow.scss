@@ -1,0 +1,73 @@
+@import "./variables";
+.arrow-right {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 2rem;
+	top: 50%;
+	right: 3%;
+	font-size: 1rem;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.arrow-left {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 2rem;
+	top: 50%;
+	left: 3%;
+	font-size: 1rem;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.arrow-handle {
+	width: 2rem;
+	height: 2px;
+	background-color: $text-color1;
+}
+
+.rotate45degRight {
+	transform-origin: calc(100% - 2px) 50%;
+	transform: rotate(45deg);
+}
+
+.rotate-45degRight {
+	transform-origin: calc(100% - 2px) 50%;
+	transform: rotate(-45deg);
+}
+
+.rotate45degLeft {
+	transform-origin: -1px 50%;
+	transform: rotate(45deg);
+}
+
+.rotate-45degLeft {
+	transform-origin: -1px 50%;
+	transform: rotate(-45deg);
+}
+
+.arrow-text {
+	height: 200px;
+	width: 70px;
+	color: $color-white;
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -35px;
+	transition: all 0.5s;
+	justify-content: center;
+}
+
+.arrow-text:hover {
+	transform: translateY(2.5rem);
+	opacity: 1;
+}

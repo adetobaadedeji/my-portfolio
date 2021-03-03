@@ -1,0 +1,41 @@
+@import "./variables";
+
+.container {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(177, 177, 177);
+	width: 100%;
+	height: 100vh;
+	perspective: 1800px;
+}
+
+
+.pageContainer {
+	background-color: #1D2147;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.pagesCube {
+	position: relative;
+	transform-style: preserve-3d;
+	height: 100%;
+	width: 100%;
+}
+
+.pagesCube__content {
+	transform-style: preserve-3d;
+	text-align: center;
+	font-weight: 400;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+

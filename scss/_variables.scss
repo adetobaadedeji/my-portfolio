@@ -1,0 +1,54 @@
+// $body-bgcolor:rgb(165, 163, 163);
+$body-bgcolor:rgb(15, 180, 182);
+$page-bgcolor: #1D2147;
+$page-bgcolor2: #202347;
+// $page-bgcolor: #1D2147;
+$color-white: rgb(255, 253, 253);
+
+// $text-color1:  #a50a0a;
+$text-color1:  #ee6e73;
+$text-color2: rgb(128, 128, 128); 
+
+$font-one: 'Nunito', sans-serif;
+$font-two: 'Varela Round', sans-serif;
+$font-three: 'Satisfy', cursive;
+$font-four: 'Truculenta', sans-serif;
+
+// Media Query Break Points
+$screen-xsm-max: 360px;
+$screen-sm-max: 596px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+
+//Mixins
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-max}){
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}){
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}){
+        @content;
+    }
+}
+
+
+
+
+
+
+// $font-primary: 'Jost', sans-serif;
+// $font-codes: 'Roboto Mono', monospace;
+// $font-header: 'Righteous', cursive;
