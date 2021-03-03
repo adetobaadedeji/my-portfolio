@@ -70,47 +70,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  outline: none;
-  border-style: none;
-  font-family: "Poppins", "Arial", sans-serif;
-}
-
-button:visited {
-  border-style: none;
-}
-
-.btn,
-.btn:link,
-.btn:focus {
-  border-style: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 0.5rem;
-  text-transform: uppercase;
-}
-
-.btn-primary {
-  font-size: 0.8rem;
-  color: #fff;
-  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
-}
-
-.btn-wrapper {
-  display: inline-block;
-  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
-  border-radius: 5px;
-  padding: 2px;
-  margin: 0px 10px;
-}
-
-.btn-secondary {
-  font-size: 0.8rem;
-  color: rgba(188, 26, 34, 0.5);
-  background-color: #fff;
-}
-
 .display-none {
   display: none;
 }
@@ -677,20 +636,26 @@ button:visited {
 .about-page-btn {
   color: #fffdfd;
 }
-.about-page-btn a.btn {
+.about-page-btn a.about-btn {
   color: #fffdfd;
   text-decoration: none;
-  border: none;
   font-size: 1rem;
   font-family: "Truculenta", sans-serif;
-  border-radius: 0.2rem;
-  background-color: #0fb4b6;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
+  border: 0.125rem solid #ee6e73;
   display: inline-block;
   line-height: 2.25rem;
   padding: 0.3rem 1rem;
   text-transform: uppercase;
   vertical-align: middle;
   margin: 0 1rem 1rem 0;
+  transition: all 1s ease;
+}
+.about-page-btn a.about-btn:hover {
+  background: linear-gradient(90deg, #fffdfd 0%, #fffdfd 0%);
+  color: #bc1a22;
+  border: 0.125rem solid #bc1a22;
 }
 
 .projects-page-container {
@@ -819,6 +784,47 @@ button:visited {
 }
 .main-text-description img {
   color: #ee6e73;
+}
+
+button {
+  outline: none;
+  border-style: none;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+button:visited {
+  border-style: none;
+}
+
+.btn,
+.btn:link,
+.btn:focus {
+  border-style: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  font-size: 0.8rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
+}
+
+.btn-wrapper {
+  display: inline-block;
+  background: linear-gradient(90deg, #ee6e73 0%, #bc1a22 100%);
+  border-radius: 0.3rem;
+  padding: 0.125em;
+  margin: 0px 0.625rem;
+}
+
+.btn-secondary {
+  font-size: 0.8rem;
+  color: rgba(188, 26, 34, 0.5);
+  background-color: #fff;
 }
 @keyframes makeItBigger {
   50% {
